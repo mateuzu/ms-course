@@ -11,7 +11,6 @@ import com.ms.hrpayroll.entities.Worker;
 @Component
 @FeignClient(
 		name = "hr-worker", //Nome do client feign
-		url = "localhost:8001", //url que o nosso client irá enviar requisições
 		path = "/workers" //caminho do recurso específico para enviar requisições
 		)
 public interface WorkerFeignClient {
