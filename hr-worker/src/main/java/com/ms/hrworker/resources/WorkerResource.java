@@ -37,13 +37,13 @@ public class WorkerResource {
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable("id")Long id){
 		
-		/* TESTANDO TIMEOUT DE RESPOSTA
+		/* TESTANDO TIMEOUT DE RESPOSTA*/
 		try {
 			Thread.sleep(3000L);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}*/
+		}
 		
 		logger.info("EXECUTED PORT = " + env.getProperty("local.server.port")); //Imprime no log a porta de execução deste projeto
 		
