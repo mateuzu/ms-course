@@ -18,7 +18,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	
 	private static final String[] ENDPOINT_PUBLIC = {"/hr-oauth/oauth/token"}; //Endpoints publicos
 	private static final String[] ENDPOINT_OPERATOR = {"/hr-worker/**"}; //Endpoints que precisam pelo menos da ROLE_OPERATOR
-	private static final String[] ENDPOINT_ADMIN = {"/hr-payroll/**", "/hr-user/**"}; //Endpoints que precisam da ROLE_ADMIN
+	private static final String[] ENDPOINT_ADMIN = {"/hr-payroll/**", "/hr-user/**", "/actuator/**", "/hr-worker/actuator/**", "/hr-oauth/actuator/**"}; //Endpoints que precisam da ROLE_ADMIN
 	
 	//Métodos sobrescritos
 	
