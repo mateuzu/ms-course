@@ -13,7 +13,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 @Configuration
-@EnableAuthorizationServer
+@EnableAuthorizationServer //Permite que o projeto vire um servidor de autorização
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
 	
@@ -30,7 +30,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Autowired
 	private AuthenticationManager manager;
 	
-	//Sobrescrever métodos da classe extendida
+	//Métodos sobrescritos
 	
 	@Override
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
